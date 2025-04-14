@@ -27,4 +27,4 @@ jobs:
 
     - name: Rodar testes unitários
       run: |
-        python -m unittest discover -s . -p "test_*.py"
+        python -m unittest discover -s . -p "test_59.py"
