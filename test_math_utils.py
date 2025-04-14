@@ -13,5 +13,14 @@ class TestMathUtils(unittest.TestCase):
         self.assertEqual(subtract(0, 0), 0)
         self.assertEqual(subtract(-20, -10), -10)
 
+    def test_multiply():
+        assert multiply(4, 3) == 12
+
+    def test_multiply_invalid_type():
+        try:
+            multiply("a", 3)
+        except ValueError:
+            assert True
+
 if __name__ == '__main__':
     unittest.main()
