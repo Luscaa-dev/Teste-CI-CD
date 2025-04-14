@@ -13,12 +13,12 @@ class TestMathUtils(unittest.TestCase):
         self.assertEqual(subtract(0, 0), 0)
         self.assertEqual(subtract(-20, -10), -10)
 
-    def test_multiply():
-        assert multiply(4, 3) == 12
+    def test_multiply(self):
+        self.assertEqual(multiply(4, 3), 12)
 
-    def test_multiply_invalid_type():
+    def test_multiply_invalid_type(self):
         try:
-            multiply(2, 3) == 6
+           self.assertEqual(multiply(2, 3), 6)
         except ValueError:
             assert True
 
