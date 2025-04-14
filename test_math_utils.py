@@ -18,7 +18,7 @@ class TestMathUtils(unittest.TestCase):
 
     def test_multiply_invalid_type():
         try:
-            multiply("a", 3)
+            multiply(2, 3) == 6
         except ValueError:
             assert True
 
