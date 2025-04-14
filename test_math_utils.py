@@ -11,7 +11,7 @@ class TestMathUtils(unittest.TestCase):
     def test_subtract(self):
         self.assertEqual(subtract(10, 4), 6)
         self.assertEqual(subtract(0, 0), 0)
-        self.assertEqual(subtract(-20, -10), -30)
+        self.assertEqual(subtract(-20, -10), -10)
 
 if __name__ == '__main__':
     unittest.main()
